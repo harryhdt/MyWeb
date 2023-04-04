@@ -1,10 +1,7 @@
 import { convertFrontMatter } from './converter.js';
 import { fetchUser, fetchAllDiscussions } from './fetcher.js';
-import { findConfig, filterPage as filterPage, filterPost } from './filter.js';
-import { writePosts, writePages, writeEnv } from './writer.js';
-
-export const GITHUB_TOKEN = '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';
-export const REPOSITORY = 'web';
+import { filterPage as filterPage, filterPost } from './filter.js';
+import { writePosts, writePages } from './writer.js';
 
 const { login: user, url: githubUrl, bio } = await fetchUser();
 let list = await fetchAllDiscussions(user);

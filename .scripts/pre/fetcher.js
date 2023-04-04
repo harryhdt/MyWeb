@@ -1,5 +1,9 @@
 import fetch from 'node-fetch';
-import { GITHUB_TOKEN, REPOSITORY } from './index.js';
+import * as dotenv from 'dotenv';
+dotenv.config();
+
+const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
+const REPOSITORY = process.env.REPOSITORY;
 
 const fetchData = async (query) => {
 	const res = await fetch('https://api.github.com/graphql', {
@@ -27,6 +31,7 @@ export const fetchUser = async () => {
 			bio
 		}
 	}`);
+	console.log('user: ', user);
 	console.log('user: ' + user.viewer.login);
 	return user.viewer;
 };

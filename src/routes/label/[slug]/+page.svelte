@@ -5,22 +5,30 @@
 
 	export let data;
 
+	let label = data.props.label;
+
 	let posts: {
 		published: Date;
 		posts: {
 			component: any;
 			metadata: Post;
 		}[];
-	}[] = data.props.posts.list.reduce((acc: any, post) => {
-		const published = moment(post.metadata.published).format('YYYY-MM-DD');
-		const group: any = acc.find((group: any) => group.published === published);
-		if (group) {
-			group.posts.push(post);
-		} else {
-			acc.push({
-				published,
-				posts: [post]
-			});
+	}[] = data.props.posts.list.reduce((acc: any, post: any) => {
+		const filterLabel =
+			label && post.metadata.labels
+				? post.metadata.labels.map((x: any) => slugify(x.name)).indexOf(label) > -1
+				: true;
+		if (filterLabel) {
+			const published = moment(post.metadata.published).format('YYYY-MM-DD');
+			const group: any = acc.find((group: any) => group.published === published);
+			if (group) {
+				group.posts.push(post);
+			} else {
+				acc.push({
+					published,
+					posts: [post]
+				});
+			}
 		}
 		return acc;
 	}, []);

@@ -1,12 +1,13 @@
 import type { PageLoad } from './$types';
 import { fetchPosts } from '$lib/helper/fetchPosts';
 
-export const load: PageLoad = async () => {
+export const load: PageLoad = async ({ params }) => {
 	const posts = await fetchPosts();
 
 	return {
 		props: {
-			posts
+			posts,
+			label: params.slug
 		}
 	};
 };

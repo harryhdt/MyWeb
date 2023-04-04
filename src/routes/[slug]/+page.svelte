@@ -1,7 +1,6 @@
 <script lang="ts">
 	import slugify from '$lib/helper/slugify';
 	import type { Post } from '$lib/types';
-	import type { SvelteComponent } from 'svelte';
 	import Giscus from '../../components/Giscus.svelte';
 
 	// import '../../code.css';
@@ -23,7 +22,7 @@
 				<span> Labels: </span>
 				{#each labels as label}
 					<a
-						href="/?label={slugify(label.name)}"
+						href="/label/{slugify(label.name)}"
 						class="font-semibold"
 						style="background-color: #{label.color}22;color: #{label.color}"
 					>
