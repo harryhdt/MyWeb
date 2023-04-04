@@ -6,7 +6,7 @@
 
 	export let data;
 
-	$: label = $page.url.searchParams.get('label') ?? '';
+	$: label = data.props.params.get('label') ?? '';
 
 	const generatePosts = () =>
 		data.props.posts.list.reduce((acc: any, post) => {
