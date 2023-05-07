@@ -36,7 +36,10 @@
 
 <div>
 	<div class="full mx-auto max-w-[1368px] px-4 py-4 md:px-8">
-		<h3 class="mb-4 text-2xl font-semibold">Posts</h3>
+		<h3 class="mb-2 text-2xl font-semibold">Posts</h3>
+		<div class="mb-4 text-slate-500 dark:text-gray-600">
+			Showing post with label "{label}"
+		</div>
 		<div class="space-y-4 sm:space-y-3">
 			{#each posts as post}
 				<div class="flex flex-col items-start gap-1 sm:flex-row sm:gap-2">

@@ -34,7 +34,7 @@
 </header>
 <div class="border-b border-slate-200 bg-slate-100 dark:border-gray-700 dark:bg-slate-800">
 	{#if pages.length}
-		<div class="mx-auto flex w-full max-w-[1368px] items-center justify-between px-4 py-4 md:px-8">
+		<div class="mx-auto flex w-full max-w-[1368px] items-center gap-4 px-4 py-4 md:px-8">
 			{#each pages as page}
 				<a
 					class="text-slate-900 underline hover:no-underline dark:text-gray-100"
