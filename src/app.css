@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#content code {
+	@apply font-normal;
+}
+
+#content code::after,
+#content code::before {
+	content: '';
+}

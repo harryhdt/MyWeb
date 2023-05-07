@@ -48,5 +48,8 @@
 		"vite": "^4.2.0",
 		"yaml": "^2.2.2"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"highlight.js": "^11.8.0"
+	}
 }
