@@ -3,6 +3,7 @@
 	import type { Post } from '$lib/types';
 	import moment from 'moment';
 	import Giscus from '../../components/Giscus.svelte';
+	import MetaTags from '../../partitions/MetaTags.svelte';
 
 	// import '../../code.css';
 
@@ -12,6 +13,7 @@
 	let labels = data.props.metadata.labels as any[] | undefined;
 </script>
 
+<MetaTags title="{metadata.title} - Harry Hidayat" description={metadata.excerpt} />
 <div>
 	<div class="full mx-auto max-w-[1368px] px-4 py-4 md:px-8">
 		<h1 class="mb-2 text-2xl font-semibold !leading-relaxed md:text-3xl">{metadata.title}</h1>

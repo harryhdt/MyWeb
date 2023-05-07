@@ -5,6 +5,8 @@ published: 2023-04-02T04:08:15Z
 updated: 2023-05-07T04:01:56Z
 url: https://github.com/harryhdt/web/discussions/7
 labels: []
+excerpt: Hello There, I am Harry Hidayat, a Junior Fullstack Software Engineer.
+  I have been programming since 2020. Especially
 ---
 Hello There,
 

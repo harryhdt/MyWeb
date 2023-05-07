@@ -2,6 +2,7 @@
 	import slugify from '$lib/helper/slugify';
 	import type { Post } from '$lib/types';
 	import moment from 'moment';
+	import MetaTags from '../../../partitions/MetaTags.svelte';
 
 	export let data;
 
@@ -34,6 +35,10 @@
 	}, []);
 </script>
 
+<MetaTags
+	title="Posts({label}) - Harry Hidayat"
+	description="Showing post with label {'"'}{label}{'"'}"
+/>
 <div>
 	<div class="full mx-auto max-w-[1368px] px-4 py-4 md:px-8">
 		<h3 class="mb-2 text-2xl font-semibold">Posts</h3>

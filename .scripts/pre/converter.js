@@ -18,6 +18,7 @@ export const convertFrontMatter = (list) =>
 			updated: node.lastEditedAt,
 			url: node.url,
 			labels: node.labels.nodes,
+			excerpt: node.excerpt,
 			...originalFrontMatter
 		};
 

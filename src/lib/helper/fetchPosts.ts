@@ -12,7 +12,7 @@ export const fetchPosts = async ({
 			Object.entries(import.meta.glob('../../data/posts/*.md')).map(async ([, page]) => {
 				const { metadata, default: component } = (await page()) as never;
 				return {
-					metadata: metadata as Post,
+					metadata: { ...(metadata as Post) },
 					component: component as SvelteComponent
 				};
 			})

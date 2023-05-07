@@ -1,5 +1,5 @@
 import path from 'path';
-import { mkdirSync, promises } from 'fs';
+import { promises } from 'fs';
 import slugify from './slugify.js';
 
 export const writePosts = async (list) => {

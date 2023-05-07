@@ -68,6 +68,13 @@ export const fetchDiscussions = async (owner, after) => {
 			}
 		}
 		}`);
+	data.repository.discussions.nodes = data.repository.discussions.nodes.map((x) => ({
+		...x,
+		excerpt: x.body
+			.substring(0, 120)
+			.replace(/[\r\n]+/g, ' ')
+			.trim()
+	}));
 	return data.repository.discussions;
 };
 

@@ -7,5 +7,6 @@ url: https://github.com/harryhdt/web/discussions/6
 labels:
   - name: Hello
     color: A40C3E
+excerpt: Just Test
 ---
 Just Test
