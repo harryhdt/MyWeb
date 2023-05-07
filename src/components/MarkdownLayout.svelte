@@ -1,12 +1,18 @@
 <script lang="ts">
-	import hljs from 'highlight.js';
-	import '../app.css';
+	import hljs from 'highlight.js/lib/core';
 	import 'highlight.js/styles/androidstudio.css';
 	import { browser } from '$app/environment';
+	import javascript from 'highlight.js/lib/languages/javascript';
+	import { onMount } from 'svelte';
+
+	onMount(() => {
+		hljs.registerLanguage('javascript', javascript);
+	});
 
 	if (browser) {
 		setTimeout(() => {
-			document.querySelectorAll('#content code').forEach((el: any) => hljs.highlightElement(el));
+			// @ts-ignore
+			document.querySelectorAll('#content code').forEach((el) => hljs.highlightElement(el));
 		}, 10);
 	}
 </script>
