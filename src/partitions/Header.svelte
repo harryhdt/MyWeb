@@ -42,6 +42,7 @@
 				>
 			{/each}
 			<a
+				target="_blank"
 				href="https://analytics.harryhdt.dev/share/fit1cjkVFVb3uhU9/Harry%20Hidayat"
 				class="text-slate-900 underline hover:no-underline dark:text-gray-100">Analytics</a
 			>

@@ -22,12 +22,12 @@
 				Last update {moment(metadata.updated ?? metadata.published).fromNow()}
 			</span>
 			{#if labels && labels.length}
-				<div class="mt-2">
+				<div class="mt-2 text-sm md:text-base">
 					<span class="text-slate-500 dark:text-gray-600"> Labels: </span>
 					{#each labels as label}
 						<a
 							href="/label/{slugify(label.name)}"
-							class="px-1 py-px transition-opacity hover:opacity-70"
+							class="mr-1 px-1 py-px transition-opacity hover:opacity-70"
 							style="background-color: #{label.color}11;color: #{label.color};"
 						>
 							#{label.name}
