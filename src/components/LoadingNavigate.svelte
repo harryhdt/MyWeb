@@ -25,7 +25,7 @@
 
 {#if $navigating && showLoading}
 	<div
-		transition:fade={{ duration: 100 }}
+		transition:fade|global={{ duration: 100 }}
 		class="fixed inset-0 z-[9999] flex items-center justify-center bg-white bg-opacity-30 p-4 backdrop-blur-sm dark:bg-gray-900 dark:bg-opacity-30"
 	>
 		<LoadingSpin show={true} class="sm:h-7 sm:w-7" />
