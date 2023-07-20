@@ -2,8 +2,8 @@
 number: 7
 title: About
 published: 2023-04-02T04:08:15Z
-updated: 2023-05-07T04:01:56Z
-url: https://github.com/harryhdt/web/discussions/7
+updated: 2023-05-28T08:11:19Z
+url: https://github.com/harryhdt/MyWeb/discussions/7
 labels: []
 excerpt: Hello There, I am Harry Hidayat, a Junior Fullstack Software Engineer.
   I have been programming since 2020. Especially
@@ -36,6 +36,7 @@ I have some skills, here is
 4. Backend Development
     - PHP Laravel
     - Adonis JS
+    - Goravel (Golang)
 <br/><br/>
 5. Database
     - MySQL
@@ -46,6 +47,7 @@ I have some skills, here is
 6. Cloud
     - Digitalocean (VPS)
     - Domainesia (Hosting & Domain)
+    - Netlify & Vercel
     - Supabase & Firebase
 <br/><br/>
 
