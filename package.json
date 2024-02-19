@@ -32,7 +32,7 @@
 		"moment": "^2.29.4",
 		"node-fetch": "^3.3.1",
 		"path": "^0.12.7",
-		"postcss": "^8.4.26",
+		"postcss": "^8.4.31",
 		"prettier": "^3.0.0",
 		"prettier-plugin-svelte": "^3.0.0",
 		"prettier-plugin-tailwindcss": "^0.4.1",
